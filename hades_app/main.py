@@ -9,8 +9,8 @@ import spacy
 import streamlit as st
 from annotated_text import annotated_text
 
-from hades_app.config import Config
-from hades_app.utils import (calculate_distance_matrix, calculate_linkage_matrix,
+from config import Config
+from utils import (calculate_distance_matrix, calculate_linkage_matrix,
                     get_hdbscan_clusters, get_hierarchical_clusters,
                     get_kmeans_clusters, manova_significant_difference_pval,
                     plot_clusters, plot_correlation_heatmap, plot_map,
@@ -57,9 +57,8 @@ def load_essentials(file_path: str) -> json:
     return j
 
 
-@click.command()
-@click.option('--config-path', default='dupa', help='Path to config.json file.')
-def main(config_path: str):
+def main():
+    config_path = "app_settings_necps.json"
     config = Config(config_path)
     if 'en' not in st.session_state:
             st.session_state.en =  spacy.load('en_core_web_sm')
@@ -90,6 +89,10 @@ def main(config_path: str):
                 margin-left: -50px;
             }}
             .css-19plaz0{{
+                transform: scale(0.93);
+                margin-left: -50px;
+            }}
+            .css-2lnqt{{
                 transform: scale(0.93);
                 margin-left: -50px;
             }}
@@ -440,4 +443,4 @@ def main(config_path: str):
             st.write("Additional files can be defined in application settings")
 
 if __name__ == '__main__':
-    main(standalone_mode=False)
+    main()
