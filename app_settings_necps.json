@@ -1,0 +1,45 @@
+{   "id_column": "country",
+    "sections": 
+    {
+        "Decarbonisation": {
+            "probs": "hades_app/data/necps/Decarbonisation_probs.csv",
+            "mapping": "hades_app/data/necps/Decarbonisation_mapping.csv",
+            "topic_words": "hades_app/data/necps/Decarbonisation_topic_words.csv",
+            "vis": "hades_app/data/necps/Decarbonisation_vis.txt",
+            "essentials": "hades_app/data/necps/Decarbonisation_essentials.json"
+        },
+        "Energy efficiency": {
+            "probs": "hades_app/data/necps/Energy_efficiency_probs.csv", 
+            "mapping": "hades_app/data/necps/Energy_efficiency_mapping.csv",
+            "topic_words": "hades_app/data/necps/Energy_efficiency_topic_words.csv",
+            "vis": "hades_app/data/necps/Energy_efficiency_vis.txt",
+            "essentials": "hades_app/data/necps/Energy_efficiency_essentials.json"
+        },
+        "Energy security": {
+            "probs": "hades_app/data/necps/Energy_security_probs.csv", 
+            "mapping": "hades_app/data/necps/Energy_security_mapping.csv",
+            "topic_words": "hades_app/data/necps/Energy_security_topic_words.csv",
+            "vis": "hades_app/data/necps/Energy_security_vis.txt",
+            "essentials": "hades_app/data/necps/Energy_security_essentials.json"
+        },
+        "Internal market": {
+            "probs": "hades_app/data/necps/Internal_market_probs.csv", 
+            "mapping": "hades_app/data/necps/Internal_market_mapping.csv",
+            "topic_words": "hades_app/data/necps/Internal_market_topic_words.csv",
+            "vis": "hades_app/data/necps/Internal_market_vis.txt",
+            "essentials": "hades_app/data/necps/Internal_market_essentials.json"
+        },
+        "R&I and Competitiveness": {
+            "probs": "hades_app/data/necps/R&I_and_Competitiveness_probs.csv", 
+            "mapping": "hades_app/data/necps/R&I_and_Competitiveness_mapping.csv",
+            "topic_words": "hades_app/data/necps/R&I_and_Competitiveness_topic_words.csv",
+            "vis": "hades_app/data/necps/R&I_and_Competitiveness_vis.txt",
+            "essentials": "hades_app/data/necps/R&I_and_Competitiveness_essentials.json"
+        }
+    },
+    "summaries_file": "hades_app/data/necps/summaries.json",
+    "additional_files": [
+        "hades_app/data/necps/additional/comissions_individual_assesment.csv",
+        "hades_app/data/necps/additional/planning_for_net_zero_report.csv"
+    ]
+}
